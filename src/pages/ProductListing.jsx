@@ -1,7 +1,7 @@
 import { useState, useMemo } from 'react';
 import { useProducts, useCategories } from '../hooks/useProduct';
 import ProductCard from '../components/product/ProductCard';
-import Spinner from '../components/ui/Spinner';
+import Spinner from '../components/ui/spinner';
 
 const ProductListing = () => {
   const { data: products, isLoading, error } = useProducts();
