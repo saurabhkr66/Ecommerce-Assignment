@@ -1,19 +1,82 @@
-# React + Vite
+ShopHub - React E-commerce App
+A modern e-commerce application built with React and Fake Store API featuring product browsing, cart management, and checkout functionality.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🚀 Quick Start
+bash
+# Install dependencies
+npm install
 
-Currently, two official plugins are available:
+# Start development server
+npm run dev
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Build for production
+npm run build
+🛠️ Tech Stack
+React 18 - UI framework
 
-## React Compiler
+Vite - Build tool
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+React Router - Routing
 
-Note: This will impact Vite dev & build performances.
+Zustand - State management
 
-## Expanding the ESLint configuration
+React Query - Data fetching & caching
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# Ecommerce-Assignment
+Tailwind CSS - Styling
+
+Axios - HTTP client
+
+Fake Store API - Backend data
+
+✨ Features
+Product listing with search and category filters
+
+Detailed product pages with ratings
+
+Shopping cart with localStorage persistence
+
+Checkout with form validation
+
+Responsive design for all devices
+
+Smart caching to reduce API calls
+
+📁 Structure
+text
+src/
+├── components/        # Reusable UI components
+├── pages/            # Page components
+├── store/            # Zustand state management
+├── services/         # API integration
+├── hooks/            # Custom React hooks
+└── App.jsx           # Main app with routing
+🌐 Routes
+/ - Product listing
+
+/product/:id - Product details
+
+/cart - Shopping cart
+
+/checkout - Checkout page
+
+🎯 Key Functionality
+Cart Management (Zustand + localStorage):
+
+Add/remove items
+
+Update quantities
+
+Auto-save cart state
+
+Calculate totals
+
+Data Fetching (React Query):
+
+Products cached for 5 minutes
+
+Categories cached for 10 minutes
+
+Automatic background refetching
+
+📦 Deployment
+Deploy to Vercel 
